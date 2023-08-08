@@ -33,16 +33,21 @@ function generatePassword () {
                 alert("Please select at least one character type.")
             }
 
-        function randomize(array) {Math.floor(Math.random(i) * array.length)};
+        function randomize(array) {array[Math.floor(Math.random() * (array.length - 1))]};
 
+        var randomArray = [0,1,2]
+
+       
+        console.log(randomize (randomArray))
+        
         if (includeLowercaseLetters) {
             possibleCharacters = possibleCharacters.concat(lowercaseLetters);
-            guaranteedCharacters.push(Math.random(lowercaseLetters.length));
+            guaranteedCharacters.push(randomize(lowercaseLetters));
         };
 
         if (includeUppercaseLetters) {
             possibleCharacters = possibleCharacters.concat(uppercaseLetters);
-            guaranteedCharacters.push(Math.floor(Math.random() * uppercaseLetters.length));
+            guaranteedCharacters.push(randomize(uppercaseLetters));
         };
 
         if (includeNumbers) {
@@ -56,7 +61,7 @@ function generatePassword () {
         };
 
         for (var i = 0; i < determineLength; i++) {
-            var possibleCharacters = Math.floor(Math.random() * possibleCharacters.length);
+            var possibleCharacters = randomize(possibleCharacters);
             finalPassword.push(possibleCharacters);
         };
 
