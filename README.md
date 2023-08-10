@@ -16,4 +16,4 @@ A preview is below.
 
 Original source code was provided by Github user [Xandromus](https://github.com/Xandromus) at this Github [repository](https://github.com/coding-boot-camp/friendly-parakeet).
 
-Assistance was provided by Learning Assistant Rudie at AskBCS in organzing the Math.random method in regards to randomly selecting an element from a user-selected character set. 
+Assistance was provided by Learning Assistant Rudie at AskBCS in organizing the 'Math.random' method in regards to randomly selecting an element from a user-selected character set. 
